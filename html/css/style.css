@@ -1,0 +1,104 @@
+body {
+  background-color: #34303b;
+  font-family: Tahoma;
+}
+
+p {
+  color: #775306;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#container {
+  width: 200px;
+  padding: 8px 8px 20px 8px;
+  margin: 20px auto;
+  background-color: #daa8cb;
+  border-radius: 4px;
+  border-top: 2px solid #776d6d;
+  border-right: 2px solid #776d6d;
+  border-bottom: 2px solid #776d6d;
+  border-left: 2px solid #776d6d;
+  box-shadow: -3px 3px 7px rgba(88, 86, 86, 0.6), inset -100px 0px 100px rgba(255, 255, 255, 0.5);
+}
+
+#display {
+  display: block;
+  margin: 15px auto;
+  height: 42px;
+  width: 174px;
+  padding: 0 10px;
+  border-radius: 4px;
+  border-top: 2px solid #5e5959;
+  border-right: 2px solid #5e5959;
+  border-bottom: 2px solid #5e5959;
+  border-left: 2px solid #5e5959;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 10px #222121, inset 0px -20px 1px rgba(150, 150, 150, 0.2);
+  font-size: 28px;
+  color: #1a1717;
+  text-align: right;
+  font-weight: 400;
+}
+
+.button {
+  display: inline-block;
+  margin: 2px;
+  width: 42px;
+  height: 42px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.mathButtons {
+  margin: 2px 2px 6px 2px;
+  color: #fff;
+  text-shadow: -1px -1px 0px #271c2e;
+  background-color: #5c535e;
+  border-top: 2px solid #c1c1c1;
+  border-right: 2px solid #c1c1c1;
+  border-bottom: 2px solid #493443;
+  border-left: 2px solid #181818;
+  box-shadow: 0px 0px 2px #a38080, inset 0px -20px 1px #2e2e2e;
+}
+
+.digits {
+  color: #181818;
+  text-shadow: 1px 1px 0px #fff;
+  background-color: #ebebeb;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #c1c1c1;
+  border-left: 2px solid #c1c1c1;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #dcdcdc;
+}
+
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover {
+  background-color: #8e3ea7;
+  box-shadow: 0px 0px 2px #8e3ea7, inset 0px -20px 1px #471c44;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #471c44;
+  border-left: 2px solid #471c44;
+}
+
+#clearButton {
+  color: #fff;
+  text-shadow: -1px -1px 0px #44006f;
+  background-color: #775306;
+  border-top: 2px solid#cc76b9;
+  border-right: 2px solid #cc76b9;
+  border-bottom: 2px solid #775306;
+  border-left: 2px solid #775306;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #775306;
+}

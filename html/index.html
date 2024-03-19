@@ -9,39 +9,51 @@
   <body>
     <div class="container">
       <fieldset id="container">
-        <p><b>Defilia Kalkulator</b></p>
         <form name="calculator">
           <table>
             <tr>
               <td colspan="4"><input id="display" type="text" name="display" readonly /></td>
             </tr>
             <tr>
-              <td><input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'" /></td>
-              <td><input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'" /></td>
-              <td><input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'" /></td>
-              <td><input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '" /></td>
+              <td><input class="button digits" type="button" value="7" onclick="append('7')" /></td>
+              <td><input class="button digits" type="button" value="8" onclick="append('8')" /></td>
+              <td><input class="button digits" type="button" value="9" onclick="append('9')" /></td>
+              <td><input class="button mathButtons" type="button" value="+" onclick="append('+')" /></td>
             </tr>
             <tr>
-              <td><input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'" /></td>
-              <td><input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'" /></td>
-              <td><input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'" /></td>
-              <td><input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '" /></td>
+              <td><input class="button digits" type="button" value="4" onclick="append('4')" /></td>
+              <td><input class="button digits" type="button" value="5" onclick="append('5')" /></td>
+              <td><input class="button digits" type="button" value="6" onclick="append('6')" /></td>
+              <td><input class="button mathButtons" type="button" value="-" onclick="append('-')" /></td>
             </tr>
             <tr>
-              <td><input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'" /></td>
-              <td><input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'" /></td>
-              <td><input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'" /></td>
-              <td><input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '" /></td>
+              <td><input class="button digits" type="button" value="1" onclick="append('1')" /></td>
+              <td><input class="button digits" type="button" value="2" onclick="append('2')" /></td>
+              <td><input class="button digits" type="button" value="3" onclick="append('3')" /></td>
+              <td><input class="button mathButtons" type="button" value="x" onclick="append('*')" /></td>
             </tr>
             <tr>
-              <td><input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''" /></td>
-              <td><input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'" /></td>
-              <td><input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)" /></td>
-              <td><input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '" /></td>
+              <td><input class="button digits" type="button" value="0" onclick="append('0')" /></td>
+              <td><input class="button digits" type="button" value="00" onclick="append('00')" /></td>
+              <td><input class="button digits" type="button" value="." onclick="append('.')" /></td>
+              <td><input class="button mathButtons" type="button" value="/" onclick="append('/')" /></td>
+            </tr>
+            <tr>
+              <td><input class="button mathButtons" type="button" value="^2" onclick="append('**2')" /></td>
+              <td><input class="button mathButtons" type="button" value="^3" onclick="append('**3')" /></td>
+              <td><input class="button digits" type="button" value="%" onclick="append('%')" /></td>
+              <td><input class="button mathButtons" type="button" value="=" onclick="calculate()" /></td>
+            </tr>
+            <tr>
+              <td><input class="button parenthesisButton" type="button" value="(" onclick="append('(')" /></td>
+              <td><input class="button parenthesisButton" type="button" value=")" onclick="append(')')" /></td>
+              <td><input class="button delButton" type="button" value="Del" onclick="deleteLastCharacter()" /></td>
+              <td><input id="clearButton" class="button" type="button" value="C" onclick="clearDisplay()" /></td>
             </tr>
           </table>
         </form>
       </fieldset>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
